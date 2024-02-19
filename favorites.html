@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorites</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    
+    <script type="module" crossorigin src="/js_97_Merylly/assets/vendor-e28a185d.js"></script>
+    <script type="module" crossorigin src="/js_97_Merylly/assets/favorites-9a5e70ce.js"></script>
+    <link rel="stylesheet" href="/js_97_Merylly/assets/favorites-f385051f.css">
+    <link rel="stylesheet" href="/js_97_Merylly/assets/vendor-e5212ee8.css">
+  </head>
+  <body>
+    <header class="fav-header">
+  <div class="container">
+    <nav class="fav-nav-list">
+      <a class="header-logo" href="./index.html">energy.flow</a>
+      <div class="header-btns">
+        <ul class="fav-nav-menu">
+          <li class="fav-header-page ">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="fav-header-page fav-active">
+            <a href="./favorites.html">Favorites</a>
+          </li>
+        </ul>
+      </div>
+      <button
+        class="header-menu-btn js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="icon-menu" width="32" height="16">
+          <use href="/js_97_Merylly/assets/sprite-5ab4865d.svg#icon-mobile-menu"></use>
+        </svg>
+      </button>
+
+      <div class="header-contacts">
+        <ul class="header-socials">
+          <li>
+            <a
+              class="header-socials-item"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+            >
+              <svg class="header-socials-icon" width="28" height="28">
+                <use href="/js_97_Merylly/assets/sprite-5ab4865d.svg#icon-facebook"></use>
+                </svg>
+              </a>
+          </li>
+          <li>
+            <a
+              class="header-socials-item"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+            >
+              <svg class="header-socials-icon" width="28" height="28">
+                <use href="/js_97_Merylly/assets/sprite-5ab4865d.svg#icon-instagram"></use>
+              </svg>
+              </a>
+          </li>
+          <li>
+            <a
+              class="header-socials-item"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+            >
+              <svg class="header-socials-icon" width="28" height="28">
+                <use href="/js_97_Merylly/assets/sprite-5ab4865d.svg#icon-youtube"></use>
+              </svg>
+              </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+    <main>
+      <section class="fav-quote-section">
+  <div class="container quote-section-inner">
+    <div class="fav-quote-wrapper">
+      <div class="fav-running-man">
+        <svg
+          class="svg-running-man"
+          width="18"
+          height="20"
+          aria-label="menu icon"
+        >
+          <use href="/js_97_Merylly/assets/sprite-5ab4865d.svg#icon-running-man"></use>
+        </svg>
+      </div>
+      <div class="fav-text-wrapper">
+        <h2 class="fav-quote-title">Quote of the day</h2>
+        <!-- backend info -->
+        <p class="fav-quote-text" id="description"></p>
+        <p class="fav-quote-author" id="author-quote"></p>
+      </div>
+      <svg class="svg-commas" width="28" height="28" aria-label="menu icon">
+        <use href="/js_97_Merylly/assets/sprite-5ab4865d.svg#icon-inverted-commas"></use>
+      </svg>
+    </div>
+    <div class="fav-flex-wrapper">
+      <div class="fav-quote-image"></div>
+      <div class="fav-daily-wrapper">
+        <div class="fav-daily-norm">
+          <svg class="svg-weight" width="20" height="20" aria-label="menu icon">
+            <use href="/js_97_Merylly/assets/sprite-5ab4865d.svg#icon-weight"></use>
+          </svg>
+          <p class="fav-daily-title">110 min</p>
+          <p class="fav-daily-text">Daily norm of sports</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section section-favorites">
+  <div class="container">
+    <div class="container-favorites">
+      <h2 class="title-favorites">Favorites</h2>
+      <div class="message-block-favorites hidden">
+        <picture>
+          <source
+            media="(max-width:767.98px)"
+            srcset="./img/dumbbell_mob.webp 1x, ../img/dumbbell_mob@2x.webp 2x"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./img/dumbbell.webp 1x, ../img/dumbbell@2x.webp 2x"
+          />
+          <source
+            media="(min-width:1440px)"
+            srcset="./img/dumbbell.webp 1x, ../img/dumbbell@2x.webp 2x"
+          />
+          <img
+            class="img-favorites"
+            width="85"
+            height="52"
+            src="data:image/webp;base64,UklGRj4DAABXRUJQVlA4WAoAAAAQAAAAVAAAMwAAQUxQSHUBAAANkGvbtrI1+9xfcXdp3Uo6d/fSpaKHzt1pGTwARLqMPENaT57CPZ+cyPddPu530SoiFLhto6TSMez43gCZGo5TwDZsBp6NmlCilMNamwRIEL2ffwpv2gJAAoKAmt+P1VBfCAGnUoeWvEEJkCn+qyIHMiV+9gaDpCNjNdAFZnsUE9RLBYAfjv7SxxHy1bjCyT7TMxIOBEMhEQjb8Fd5D39blmUY9q8nZ9WL2lRLLgkHAoFQSEQ6djKhoUSG33tTz4YIN5aIr/KQL3En6Oh4tzku6qhK7klwGUCAgACR06TPUKztKdzfiJm05IrNnORaueSQSTELR/Ky4qIRCHfZuQ3FWBbAnheHbbctkdAVu3JvyhfnRnCuzyJmUMeI+VKUSkzz22E3r3+/b2EQ4X/6SZW/zvNZBhjMiAI/34IZ/9OLEv11vrzTsiFWcf0Q+4BGz4l6Ryd01Nd4GR8VYYSkVntleSDBdu7xwDtDEaeZlYbzM0tfH8gAAFZQOCCiAQAAEA0AnQEqVQA0AD55NJJHpKMhoTq4DACQDwlpABOlfpmBAeaxoO15eg+xN2pbrLy6wftS9LvE+rNDRhzcQ5TTzb2yPvqXed7pe+RHcdhGyq3BogFaDtIR6W9SwX+MZGPaRnq1uZ2uj45jpuG9zyXsmiAA/v4U1OjQMFdKpHuV+fvl//rp7H2i9Xc37U7W5U0cihTZGmmZ/UNQJzdLIC7a780jFVqaXt7gUrO2D6itJTVaYOp9fdbxh6FwGI0U1kyvCJ/i8+7iBReDg46g8Ljf59K5qmpzuAE4x6oUdE2GojijYq2glp06+qLX4U6OzbiYAXjxaYxwo96jTTsctWwwAJl7M0WclAd4HiKr6kQ0oZvxAe7C7tMI9e1lOrHFDNZQV3ud3RRui185sLWrOy98L1NiOheIdNUeFtQGSzgS8AmU6ELyapxtcC58IAM7dY2f4OGhItZYPhf9cqkDCPmt+BuEVRN/oW3//FQ7q//6a/stEbf97/ekxF96RrDhpZ6DcWCIDWunxGRep85lv3V4vSCHvZ6wb6Rw1ENVmf8eLAAAAA=="
+            alt="Dumbbell"
+          />
+        </picture>
+        <p class="text-favorites">
+          It appears that you haven't added any exercises to your favorites yet.
+          To get started, you can add exercises that you like to your favorites
+          for easier access in the future.
+        </p>
+      </div>
+      <div class="gallery-favorites js-gallery">
+        <ul class="list-favorites" id="favorites-container">
+          <!-- <li class="item-favorites" data-id="${exercise._id}">
+            <div class="workout-block">
+              <p class="workout-title">Workout</p>
+              <button
+                class="delete-from-fav remove-from-favorites-btn"
+                type="button"
+              >
+                <svg class="delete-icon" width="16" height="16">
+                  <use href="../img/sprite.svg#icon-delete"></use>
+                </svg>
+              </button>
+            </div>
+            <button class="start-btn" type="button">
+              Start
+              <svg class="arrow-icon" width="14" height="14">
+                <use href="../img/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="ex-title-block">
+              <div class="icon-man-wraper">
+                <svg class="man-icon" width="16" height="16">
+                  <use href="../img/sprite.svg#icon-running-man"></use>
+                </svg>
+              </div>
+              <h3 class="ex-title">Air bike</h3>
+            </div>
+            <ul class="list-ex-category">
+              <li>
+                <p class="category-text">
+                  <span class="category-text-accent">Burned calories: </span
+                  >200/ 3 min
+                </p>
+              </li>
+              <li>
+                <p class="category-text">
+                  <span class="category-text-accent">Body part: </span>Waist
+                </p>
+              </li>
+              <li>
+                <p class="category-text">
+                  <span class="category-text-accent">Target: </span>Abs
+                </p>
+              </li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+
+<div class="container" >
+    <!-- mobile menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="top-box">
+        <a class="logo" href="./index.html">energy.flow</a>
+        <button class="menu-toggle-x js-close-menu">
+          <svg 
+          width="20"
+          height="20">
+            <use class="menu-toggle-x-icon" href="/js_97_Merylly/assets/sprite-5ab4865d.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+   
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link home-link active" href="./index.html">Home</a></li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link fav-link" href="./favorites.html">Favorites</a></li>
+      </ul>
+
+      <ul class="mob-menu-soc-box">
+
+          <li class="soc-conts-item">
+              <a class="soc-conts-link" href="https://www.facebook.com/goITclub/"
+              target="_blank" aria-label="icon-facebook">
+              <svg class="soc-conts-icon">
+                <use href="/js_97_Merylly/assets/sprite-5ab4865d.svg#icon-facebook"></use>
+              </svg>  
+              </a>
+            </li>
+    
+        <li class="soc-conts-item">
+          <a class="soc-conts-link" 
+          href="https://www.instagram.com/goitclub/"
+              target="_blank" aria-label="icon-instagram">
+            <svg class="soc-conts-icon">
+            <use href="/js_97_Merylly/assets/sprite-5ab4865d.svg#icon-instagram"></use>
+          </svg>  
+          </a>
+        </li>
+
+        <li class="soc-conts-item">
+          <a class="soc-conts-link" 
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank" aria-label="icon-youtube">
+            <svg class="soc-conts-icon">
+            <use href="/js_97_Merylly/assets/sprite-5ab4865d.svg#icon-youtube"></use>
+          </svg>  
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+  
+
+    </main>
+
+    
+  </body>
+</html>
